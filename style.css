@@ -1,4 +1,8 @@
 body {
+  /* Aligns the widget containers vertically */
+  flex-direction: column; 
+  /* Adds some space between the widget containers */
+  gap: 1rem; 
 
   background-image: url(public/desktop_background.jpg);
   background-position: center center;

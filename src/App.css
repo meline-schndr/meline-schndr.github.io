@@ -1,0 +1,119 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+
+    background-image: url("./assets/images/desktop_background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #000000;
+
+    font-family:
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+#widget-container .flex.items-center.gap-4 {
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    gap: 0.5rem;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.widget-background {
+    background-color: #4343438a;
+    backdrop-filter: blur(10px);
+}
+
+#widget-container {
+    min-width: 500px;
+    max-width: 90%;
+    border-radius: 1.5rem;
+    padding: 1.25rem;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+.text-lg {
+    font-size: 1.125rem;
+}
+.font-bold {
+    font-weight: 700;
+}
+.no-underline {
+    text-decoration: none;
+}
+
+.text-white {
+    color: white;
+}
+
+.rounded-xl {
+    min-width: 6rem;
+    max-width: 6rem;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        background-image: url("./assets/images/mobile_background.jpg");
+    }
+
+    #widget-container {
+        min-width: unset;
+        width: 85%;
+    }
+}
